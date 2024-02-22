@@ -20,7 +20,6 @@ bool pinterLine(vec2 p1, vec2 p2, float lineWidth, vec2 st){
         p2 = temp;   
     }
     
-    
     if (p1.x <= p2.x && p1.y <= p2.y){
         float d_chuyi_2sita = lineWidth / (2.0 * cos(atan((p2.y - p1.y)/(p2.x - p1.x))));
         float k = (p2.y - p1.y)/(p2.x - p1.x) * (st.x - p1.x);
